@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Cont.css";
+import "./cont.css";
 import receptionVideo from "../videos/wine2.mp4"; 
 
 function Cont() {
