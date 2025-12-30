@@ -1,5 +1,5 @@
 import "./Apartmentsmain.css";
-import Apart from "./apart.jsx";
+import Apart from "./Apart.jsx";
 import homeVideo from "../videos/rest.mp4";
 import logo from "../images/logo.svg";
 import Footer from "./Footer.jsx";
