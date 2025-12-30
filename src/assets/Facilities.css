@@ -1,0 +1,164 @@
+.fac-section {
+  background: #f4efea;
+  padding: 100px 0;
+  text-align: center;
+}
+
+
+.fac-header {
+  max-width: 750px;
+  margin: 0 auto 60px;
+}
+
+.fac-title-top {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #262424;
+  line-height: 1.25;
+}
+
+.fac-title-main {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #b28b5b;
+  letter-spacing: 6px;
+  margin: 12px 0 28px;
+}
+
+.fac-text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.8px;
+  line-height: 1.7;
+  color: #4e4845;
+  margin-bottom: 16px;
+}
+
+
+.fac-img-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 55px;
+  flex-wrap: wrap;
+}
+
+.fac-col {
+  width: 30%;
+  min-width: 260px;
+}
+
+.fac-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.fac-img-title {
+  font-family: "Playfair Display", serif;
+  color: #272423;
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 14px;
+}
+
+
+.fac-divider {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin: 65px 0 45px;
+}
+
+
+.fac-need-title {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  letter-spacing: 4px;
+  color: #b28b5b;
+}
+
+.fac-need-subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #000;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+
+.fac-features {
+  display: flex;
+  justify-content: center;
+  gap: 38px 60px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.feature-box {
+  text-align: center;
+  width: 150px;
+}
+
+.feature-icon {
+  width: 55px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.feature-text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #4e4845;
+  letter-spacing: 1px;
+}
+
+
+@media (max-width: 992px) {
+  .fac-title-main {
+    font-size: 34px;
+  }
+  .fac-col {
+    width: 47%;
+  }
+  .fac-img {
+    height: 270px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fac-col {
+    width: 100%;
+  }
+  .fac-img {
+    height: 260px;
+  }
+  .fac-title-top {
+    font-size: 28px;
+  }
+  .fac-title-main {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fac-section {
+    padding: 70px 6%;
+  }
+  .fac-features {
+    gap: 30px;
+  }
+  .fac-need-title,
+  .fac-need-subtitle {
+    font-size: 30px;
+  }
+}

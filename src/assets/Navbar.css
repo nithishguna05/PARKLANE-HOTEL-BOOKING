@@ -1,0 +1,261 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 30px 0;
+  transition: background 0.3s ease;
+}
+
+.navbar-custom.nav-scrolled {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.menu-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.menu-lines span {
+  width: 36px;
+  height: 2px;
+  background: #fff;
+  transition: transform 0.35s ease, background 0.3s;
+}
+
+.navbar-custom.nav-scrolled .menu-lines span {
+  background: #000;
+}
+
+.menu-lines.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-lines.open span:nth-child(2) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.nav-logo {
+  width: 120px;
+  height: 70px;
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+}
+
+.nav-logo.hide {
+  opacity: 0;
+}
+
+.nav-logo.show {
+  opacity: 1;
+}
+
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-btn {
+  padding: 10px 16px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-custom.nav-scrolled .nav-btn {
+  border: 1px solid #000;
+  color: #000;
+  margin: 10px;
+}
+
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: #e8dfd3;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.menu-top {
+  padding: 5px 2px;
+}
+.menu-top-btn{
+  text-decoration: none;
+  color: #e8dfd3;
+  background-color: #9b7b4a;
+  padding: 5px 10px;
+}
+
+.menu-close {
+  font-size: 32px;
+  cursor: pointer;
+  color: #000;
+}
+
+.menu-logo {
+  width: 120px;
+  height: 100px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.menu-list li {
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin: 14px 0;
+  color: #9b7b4a;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+
+.menu-list li:hover {
+  transform: translateX(50px);
+}
+
+
+.restaurant-item:hover {
+  transform: translateX(-2px) !important;
+}
+
+.restaurant-dropdown {
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.restaurant-item:hover .restaurant-dropdown {
+  max-height: 300px;
+}
+.restaurant-dropdown li{
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 8px 0;
+  color: #9b7b4a;
+
+}
+.restaurant-dropdown a {
+  display: block;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 8px 0;
+  color: #9b7b4a;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-dropdown a:hover {
+  transform: translateX(30px);
+}
+
+.menu-booking {
+  margin: 30px 0;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.menu-booking a {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #9b7b4a;
+  text-decoration: none;
+  border: 1px solid #9b7b4a;
+  padding: 10px 18px;
+  transition: 0.3s;
+}
+
+.menu-booking a:hover {
+  background: #9b7b4a;
+  color: #fff;
+}
+
+
+.menu-footer a {
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: #9b7b4a !important;
+  text-decoration: none;
+  padding: 6px 15px;
+}
+
+.menu-footer a:hover {
+  border-bottom: 2px solid #9b7b4a;
+}
+
+
+.menu-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  padding-top: 40px;
+  padding-left: 130px;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-list,
+  .menu-footer {
+    text-align: center;
+  }
+
+  .menu-list li {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    transform: none !important;
+  }
+
+  .restaurant-dropdown {
+    max-height: none;
+  }
+
+  .restaurant-dropdown a {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .menu-footer a {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    padding: 10px 5px;
+  }
+
+  .menu-booking {
+    justify-content: center;
+  }
+
+  .menu-list li:hover,
+  .restaurant-dropdown a:hover {
+    transform: none;
+  }
+}

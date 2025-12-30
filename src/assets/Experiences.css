@@ -1,0 +1,146 @@
+
+.exp-section {
+  width: 100%;
+  background: #f4f0ea;
+  padding: 80px 0;
+}
+
+
+.exp-title-row {
+  margin-bottom: 45px;
+}
+
+.exp-explore {
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #7f756c;
+  font-family: "Lato", sans-serif;
+}
+
+.exp-main-title {
+  font-size: 42px;
+  letter-spacing: 3px;
+  color: #2a2727;
+  font-family: "Times New Roman", serif;
+}
+
+
+.exp-progress-track {
+  width: 100%;
+  max-width: 300px;
+  height: 2px;
+  background: #d0c8bf;
+  position: relative;
+  margin-top: 12px;
+}
+
+.exp-progress-indicator {
+  width: 50px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  top: -0.5px;
+  transform: translateX(-50%);
+  transition: left 0.6s ease;
+}
+
+
+.exp-slider {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.exp-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.exp-card {
+  flex: 0 0 auto;
+  width: clamp(230px, 70vw, 300px);
+  scroll-snap-align: center;
+  width: 400px;
+}
+
+
+.exp-img {
+  width: 100%;
+  height: clamp(220px, 50vw, 340px);
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.exp-img:hover {
+  transform: scale(1.05);
+}
+
+.exp-card-title {
+  margin-top: 12px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #2a2727;
+  font-family: "Times New Roman", serif;
+}
+
+.exp-line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin-top: 8px;
+}
+
+.exp-view-btn {
+  margin-top: 14px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+}
+
+.exp-bottom-line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  margin-top: 45px;
+}
+
+
+@media (max-width: 992px) {
+  .exp-main-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-main-title {
+    font-size: 32px;
+  }
+  .exp-progress-track {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .exp-main-title {
+    font-size: 28px;
+  }
+  .exp-explore {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+  .exp-card {
+    width: 75vw;
+  }
+  .exp-img {
+    height: 260px;
+  }
+}

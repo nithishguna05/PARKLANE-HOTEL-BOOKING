@@ -1,0 +1,144 @@
+
+.wine-section {
+  padding: 160px 0;
+}
+
+.wine-row {
+  margin-bottom: 180px;
+}
+
+.wine-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.wine-tag {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 18px;
+}
+
+.wine-section h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: #111;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+
+.wine-text {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  max-width: 520px;
+  margin-bottom: 52px;
+}
+
+
+.wine-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #b58b4c;
+  color: aliceblue;
+  text-decoration: none;
+  /* border: 1px solid #b58b4c; */
+  padding: 14px 38px;
+  width: fit-content;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+
+.wine-media {
+  width: 100%;
+  display: block;
+  height: 100vh;
+ 
+}
+.wine-medi{
+  margin-top: 515px;
+  margin-left: 30px;
+}
+.wine-ta{
+    font-family: "Inter", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-top: 18px;
+  margin-left: 30px;
+
+}
+.h{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: #111;
+  margin-bottom: 32px;
+    margin-left: 30px;
+}
+.wine-tex {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #3a3a3a;
+  max-width: 520px;
+  margin-bottom: 52px;
+  margin-left: 30px;
+}
+.wine-media.tall {
+  height: 90vh;
+  object-fit: cover;
+}
+
+
+.wine-full-video video {
+  width: 100%;
+  height: 82vh;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 180px;
+}
+
+
+@media (max-width: 992px) {
+  .wine-section {
+    padding: 100px 0;
+  }
+
+  .wine-row {
+    margin-bottom: 120px;
+  }
+
+  .wine-section h1 {
+    font-size: 32px;
+  }
+
+  .wine-full-video video {
+    height: 50vh;
+    margin-bottom: 120px;
+  }
+
+  .wine-media.tall {
+    height: 60vh;
+  }
+}
+@media (max-width: 992px) {
+  .wine-medi{
+  margin-top: 25px;
+  margin-right: 30px;
+}
+
+}
+
+

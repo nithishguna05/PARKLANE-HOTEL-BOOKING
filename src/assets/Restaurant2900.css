@@ -1,0 +1,165 @@
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+.header-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.header-logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.header-logo img {
+  width: 240px;
+}
+
+.tita h1 {
+  position: absolute;
+  bottom: 270px;
+  left: 37%;
+  font-family: "Cinzel", serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+h1 {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+}
+
+.tit1 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.ev-btn,
+.l1 a {
+  background: #9b7b4a;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.l1 {
+  margin-top: 30px;
+}
+
+.l2 {
+  margin-top: 100px;
+}
+
+.l3 {
+  margin-top: 30px;
+}
+
+.r3 {
+  margin-top: 30px;
+}
+
+.l1 img {
+  width: 400px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.r1 img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.r2 img {
+  margin-top: 40px;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.l3 img {
+  width: 100%;
+  height: auto;
+}
+
+.r3 img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+
+.r3 video {
+  width: 500px;
+  height: 800px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.brunch-circle-img {
+  width: 260px;
+  height: 260px;
+  margin-top: 40px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .tita h1 {
+    left: 15%;
+    font-size: 28px;
+  }
+
+  .r1 img,
+  .r2 img,
+  .l1 img,
+  .l3 img,
+  .r3 img,
+  .brunch-circle-img,
+  .r3 video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ev-btn,
+  .l1 a {
+    font-size: 11px;
+    padding: 8px;
+  }
+}

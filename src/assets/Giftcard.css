@@ -1,0 +1,50 @@
+.giftcard-section {
+  background: #f7f4ef;
+  padding: 120px 0;
+}
+
+.sh{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.giftcard-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+
+.giftcard-content {
+  max-width: 520px;
+}
+
+.giftcard-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+
+.giftcard-btn {
+  display: inline-block;
+  background: #9b7a4a;
+  color: #fff;
+  padding: 14px 48px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 991px) {
+  .giftcard-section {
+    padding: 80px 0;
+  }
+
+  .giftcard-content {
+    max-width: 100%;
+  }
+}

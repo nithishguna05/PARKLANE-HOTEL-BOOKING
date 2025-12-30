@@ -1,0 +1,169 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+.header-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
+}
+
+/* LOGO */
+.header-logo {
+  position: absolute;
+  top: 110px;             
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.header-logo img {
+  width: 240px;
+}
+
+
+.booking-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;    
+  padding-top: 420px;          
+  z-index: 3;
+  position: relative;
+}
+
+.booking-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+
+.booking-block {
+  min-width: 220px;
+}
+
+
+.booking-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.date-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.guest-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.guest-controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+.booking-line {
+  margin-top: 14px;
+  height: 1px;
+  background: rgba(255,255,255,0.6);
+  width: 100%;
+}
+
+
+.find-room {
+  border: 1px solid #fff;
+  padding: 14px 32px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.find-room:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media (max-width: 992px) {
+
+  .header-logo {
+    top: 90px;
+  }
+
+  .booking-container {
+    padding-top: 280px;
+  }
+
+  .booking-bar {
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .booking-block {
+    min-width: 260px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .header-logo {
+    top: 80px;
+  }
+
+  .header-logo img {
+    width: 180px;
+  }
+
+  .booking-container {
+    padding-top: 240px;     
+  }
+
+  .booking-bar {
+    gap: 22px;
+  }
+
+  .booking-block {
+    min-width: 240px;
+  }
+
+  .find-room {
+    padding: 12px 28px;
+    font-size: 13px;
+  }
+}
