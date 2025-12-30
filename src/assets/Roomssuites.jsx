@@ -1,6 +1,6 @@
 import homeVideo from "../videos/rooms.mp4";
 import logo from "../images/logo.svg";
-import Room from "./room.jsx";
+import Room from "./Room.jsx";
 import Footer from "./Footer.jsx";
 import Navbar from "./Navbar.jsx";
 import "./Roomssuites.css";
