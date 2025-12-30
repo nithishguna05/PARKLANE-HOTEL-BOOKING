@@ -10,7 +10,7 @@ import Events from "./assets/Events.jsx";
 import Winebar from "./assets/Winebar.jsx";
 import Meetingsconferences from "./assets/Meetingsconferences.jsx";
 import Contact from "./assets/Contact.jsx";
-import Faq from "./assets/Faq.jsx";
+import Faq from "./assets/FAQ.jsx";
 import Gift from "./assets/Gift.jsx";
 import Gallery from "./assets/Gallery.jsx";
 import Abouthotel from "./assets/Aboutthehotel.jsx";
